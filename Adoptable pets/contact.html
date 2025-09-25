@@ -2,54 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--our contact information-->
-    <a href="homepage.html">
-        <img src="Adoptable Pets/SPCA.jpeg" alt="SPCA" 
-             style="position:fixed; top:10px; right:10px; width:100px; height:auto;">
-      </a>
-   <header><h1>SPCA - Contact Us</h1><nav>
-    <a href="index.html">Home</a>|
-<a href="about.html">About Us</a>|
-<a href="adoptable.html">Adoptable Pets</a>|
-<a href="success.html">Success Stories</a> |
-<a href="contact.html">Contact Us</a>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Adoptable Pets/SPCA.jpeg" alt="SPCA Logo">
+                <h1>SPCA</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle" style="display: none;">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adoptable.html">Adoptable Pets</a></li>
+                    <li><a href="success.html">Success Stories</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-</nav>
-</header>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you!</p>
+            </div>
+        </section>
 
-<main>
-    <h2>We'd love to hear from you!</h2>
-    
-    <img src="Adoptable Pets/Contact.jpeg" alt="Contact" wildth="300">
+        <section class="contact">
+            <div class="container">
+                <div class="contact-image">
+                    <img src="Adoptable Pets/Contact.jpeg" alt="Contact Us">
+                </div>
+                
+                <p>If you have questions about adoption, volunteering, or donations, please reach out using the form below:</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Other ways to contact us:</h2>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> <a href="mailto:info@spca.org">info@spca.org</a></p>
+                            <p><strong>Phone:</strong> (27+) 602344567</p>
+                            <p><strong>Address:</strong> 123 Pet Lane, HappyTown, SA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form action="mailto:info@spca.org" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p>if you have questions about adoption,volunteering,or donations,please reach out using the form below:</p>
-    <section>
-        <form action="adivhaho:info@spca.org" method="post" enctype= "text/plain"><label for="name">Name:</label><br><input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-
-        <label for="subject">Subject:</label><br>
-        <input type="subject" id="subject" name="subject" required><br><br>
-
-
-        <label for="message">Message:</label><br>
-        <input type="message" id="message" name="message" rows="6" cols="50" required></textarea><br><br>
-
-        <button type="submit">Send</buttons>
-        <button type="reset">Reset</button>
-    </section>
-
-
-    <section><h3>Other ways to contact us:</h3><p></p>Email:<a href="adivhaho:info@spca.org">info@spca.org</a></p><p>Phone: (27+) 602344567</p><p>Address: 123 Pet Lane,HappyTown, SA</p>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 SPCA.All rights reserved.</p>
-</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SPCA. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

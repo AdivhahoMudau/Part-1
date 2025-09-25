@@ -2,52 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href="homepage.html">
-        <img src="Adoptable Pets/SPCA.jpeg" alt="SPCA" 
-             style="position:fixed; top:10px; right:10px; width:100px; height:auto;">
-      </a>
     <header>
-        <h1>Welcome to the SPCA</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="adoptable.html">Adoptable Pets</a> |
-            <a href="success.html">Success Stories</a> |
-            <a href="contact.html">Contact</a>
-            
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <img src="Adoptable Pets/SPCA.jpeg" alt="SPCA Logo">
+                <h1>SPCA</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle" style="display: none;">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adoptable.html">Adoptable Pets</a></li>
+                    <li><a href="success.html">Success Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Our Mission</h2>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to SPCA</h2>
+                <p>We are dedicated to the welfare and protection of animals. Help us give them a second chance at a loving home.</p>
+                <a href="adoptable.html" class="btn">Adopt a Pet Today</a>
+            </div>
+        </section>
 
-        <img src="Adoptable Pets/Homepage.jpeg" alt="Homepage" wildth="300">
-        <p>
-            At the SPCA (Society for the Prevention of Cruelty to Animals), we are dedicated to 
-            protecting animals, finding loving homes for pets in need, and promoting 
-            responsible pet ownership in our community.
-        </p>
-<!--this is how we can help you-->
-        <h2>How You Can Help</h2>
-        <ul>
-            <li><strong>Adopt:</strong> Give a homeless pet a second chance at life.</li>
-            <li><strong>Volunteer:</strong> Share your time and compassion with animals in need.</li>
-            <li><strong>Donate:</strong> Support our programs and help us provide food, shelter, and medical care.</li>
-        </ul>
+        <section class="features">
+            <div class="container">
+                <h2>How We Help Animals</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Rescue & Shelter</h3>
+                        <p>We rescue abandoned and neglected animals and provide them with safe shelter.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Medical Care</h3>
+                        <p>All our animals receive necessary veterinary care and rehabilitation.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Adoption Services</h3>
+                        <p>We find safe, permanent homes for animals through our adoption program.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Start Exploring</h2>
-        <p>
-            Meet our <a href="adoptable.html">adoptable pets</a> or learn more 
-            <a href="about.html">about us</a>.  
-            If you’d like to reach out, please visit our <a href="contact.html">contact page</a>.
-        </p>
+        <section class="pets">
+            <div class="container">
+                <h2>Featured Pets</h2>
+                <div class="pets-grid">
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="Adoptable Pets/Baxter.jpeg" alt="Baxter the dog">
+                        </div>
+                        <div class="pet-info">
+                            <h3>Baxter</h3>
+                            <p>2-year-old friendly Jack Russel Terrier who loves walks and kids.</p>
+                        </div>
+                    </div>
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="Adoptable Pets/Luna.jpeg" alt="Luna the cat">
+                        </div>
+                        <div class="pet-info">
+                            <h3>Luna</h3>
+                            <p>6-month-old playful Ragdoll cat who enjoys toys and sunny windowsills.</p>
+                        </div>
+                    </div>
+                    <div class="pet-card">
+                        <div class="pet-image">
+                            <img src="Adoptable Pets/Sunny.jpeg" alt="Sunny the dog">
+                        </div>
+                        <div class="pet-info">
+                            <h3>Sunny</h3>
+                            <p>10-month-old gentle Golden Retriever who enjoys scratches and calm environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 SPCA. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 SPCA. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

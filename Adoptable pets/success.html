@@ -2,41 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA - Success Stories</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>SPCA-Success Stories</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="adoptable.html">Adoptable Pets</a> |
-            <a href="success.html">Success Stories</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <img src="Adoptable Pets/SPCA.jpeg" alt="SPCA Logo">
+                <h1>SPCA</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="menu-toggle" style="display: none;">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="adoptable.html">Adoptable Pets</a></li>
+                    <li><a href="success.html" class="active">Success Stories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main> 
-        <!--success story 1-->
-        <h2>Buddy's New Home</h2>
-        <img src="Adoptable Pets/Maki.jpeg" alt="Buddy adoption" width="300">
-        <p>Buddy was rescued and found a loving family. Adoption changed his life!</p>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Success Stories</h1>
+                <p>Happy endings for our rescued animals</p>
+            </div>
+        </section>
 
-        <!--sucess story 2-->
-        <h2>Luna's Foster Journey</h2>
-        <img src="Adoptable Pets/rescued cat.jpeg" alt="Gabby adoption" width="300">
-        <p>Gabby, shy at first, is now thriving in her forever home thanks to a caring volunteer.</p>
+        <section class="success-stories">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-card">
+                        <h3>Max's New Family</h3>
+                        <div class="story-image">
+                            <p>Success Story Image</p>
+                        </div>
+                        <p>Max was found abandoned and malnourished. After months of care, he found his forever home with the Johnson family.</p>
+                    </div>
 
-        <!--success story 3-->
-        <h2>Community Fundraiser Success</h2>
-        <img src="Adoptable Pets/community event.jpeg" alt="Fundraiser" width="300">
-        <p>Thanks to our donors, we raised funds for food and care for over 50 rescued animals this month!</p>
-    
+                    <div class="story-card">
+                        <h3>Luna's Recovery</h3>
+                        <div class="story-image">
+                            <p>Success Story Image</p>
+                        </div>
+                        <p>Luna came to us with a broken leg. After surgery and rehabilitation, she's now running and playing like never before.</p>
+                    </div>
+
+                    <div class="story-card">
+                        <h3>Whiskers' Second Chance</h3>
+                        <div class="story-image">
+                            <p>Success Story Image</p>
+                        </div>
+                        <p>Whiskers was rescued from a hoarding situation. She's now living her best life in a loving home with plenty of toys and attention.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
     <footer>
-        <p>&copy; 2025 SPCA</p>
+        <div class="container">
+            <p>&copy; 2025 SPCA. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
